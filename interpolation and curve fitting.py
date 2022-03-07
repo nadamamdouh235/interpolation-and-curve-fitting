@@ -225,7 +225,7 @@ def draw(event):
         text.set_visible(False)
 
     if chunksnumber == 1 and extrapolation_Percent == 100:
-        plotting(x_axis, data['y'], '-', 'blue')
+        plotting(x_axis, data['y'], '-')
         fitting(x_axis, data['y'], polynomial_degree, chunksnumber)
         plotting(x_axis, fitting(
             x_axis, data['y'], polynomial_degree, chunksnumber)(x_axis), '--')
